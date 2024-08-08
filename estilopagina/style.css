@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos de Header*/
+
+header {
+  text-align: center;
+  font-size: 24px;
+  font-family: "playfair display";
+}
+
+header img {
+  width: 160px;
+  padding: 6px;
+  margin-top: 15px;
+  box-shadow: 3px 3px 5px rgba(11, 1, 10, 0.504);
+  align-self: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+header nav ul li:not(:last-child) {
+  border-right: 1px solid #8f005f;
+}
+
+header nav ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #8f005f;
+  letter-spacing: 5px;
+}
+
+a:hover {
+  background-color: hsla(300, 84%, 17%, 0.621);
+  color: rgb(228, 220, 220);
+  border-radius: 5px;
+}
+
+h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.subtitulo {
+  font-size: 18px;
+}
+
+/* ESTILOS DE INDEX*/
+
+body {
+  text-align: center;
+  font-family: "playfair display";
+  background-image: url(../imgs/fondo\ background.jpg);
+}
+
+.imagenes-uñas img {
+  width: 160px;
+  border-radius: 20px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.subtitulo2 {
+  margin-top: 20px;
+}
+
+.subtitulo3 {
+  margin: 20px;
+}
+
+.subtitulo4 {
+  margin: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto1 {
+  width: 500px;
+  margin: 20px auto;
+  background-color: #f5f5dc69;
+  font-size: 18px;
+}
+
+.texto2 {
+  width: 500px;
+  margin: 20px auto;
+  background-color: #f5f5dc69;
+  font-size: 18px;
+}
+
+/*ESTILOS DE SERVICIOS*/
+
+#carouselExampleFade {
+  width: 400px;
+}
+
+#GridConteiner1 {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.griditem1:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+/*ESTILOS DE NOSOTROS*/
+
+.subtitulonosotros {
+  margin-top: 20px;
+}
+
+.textonosotros {
+  margin: 20px auto;
+  width: 500px;
+  font-size: 20px;
+  background-color: #f5f5dc69;
+}
+
+.mapa {
+  margin-bottom: 20px;
+}
+
+/*ESTILOS DE CURSOS*/
+
+.cursos img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+/*ESTILOS DE CONTACTO*/
+
+.subtitulocontacto {
+  margin: 20px;
+}
+
+/*ESTILOS DEL FOOTER*/
+
+footer {
+  font-family: "Playfair Display";
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#gridcontainer {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width:480px) {
+ #gridcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+ }
+}
+
+@media screen and (max-width:1024px) {
+
+}
