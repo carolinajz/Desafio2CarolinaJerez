@@ -9,74 +9,110 @@
 body {
   background-image: url(../imgs/background.jpg);
   background-size: cover;
+  background-attachment: fixed;
   font-family: "playfair display";
   font-size: 18px;
   text-align: center;
   padding-left: 100px;
   padding-right: 100px;
+}
 
-  header {
-    .logo {
-      img {
-        width: $sizeimg;
-        border-radius: 20px;
-      }
-    }
-    .navbar {
-      .nav-item {
-        display: inline-block;
-        justify-content: space-between;
-        margin-left: 10px;
-        padding-right: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
-
-      .nav-item:not(:last-child) {
-        border-right: 1px solid #8f005f;
-      }
-
-      a:hover {
-        background-color: hsla(300, 90%, 41%, 0.329);
-        color: rgb(255, 255, 255);
-        border-radius: 5px;
-        text-decoration: none;
-      }
-    }
-  }
-
-  .imagenes-uñas {
+header {
+  .logo {
     img {
       width: $sizeimg;
       border-radius: 20px;
-      text-align: center;
-      margin-right: 10px;
-      margin-bottom: 20px;
-      &:hover{
-        width: 300px;
-      }
     }
   }
-
-  main {
-    margin-top: 10px;
-    background-color: rgba(250, 235, 215, 0.67);
-  }
-
-  .cursos{
-    img{
-        width: 350px;
+  .navbar {
+    background-color: #ffffff78;
+    .nav-item {
+      display: inline-block;
+      justify-content: space-between;
+      margin-left: 60px;
+      padding-right: 60px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .nav-item:not(:last-child) {
+        border-right: 1px solid #e70086f3;
+    }
+    a{
+        text-decoration: none;
+        color: #e70086f3;
         &:hover{
-            width: 450px;
+            background-color: hsla(300, 90%, 41%, 0.329);
+            color: hwb(0 100% 0% / 0.999);
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 20px;
         }
     }
   }
 }
 
-footer{
-    #gridcontainer{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+.imagenes-uñas {
+  img {
+    width: $sizeimg;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    &:hover {
+      width: 300px;
+      transition: all 4s;
     }
+  }
+}
+
+main {
+  margin-top: 10px;
+  background-color: #ffffff78;
+}
+
+.cursos {
+  img {
+    width: 350px;
+    &:hover {
+      width: 450px;
+      transition: all 2s;
     }
+  }
+}
+
+#carouselExampleFade {
+    width: 400px;
+  }
+  
+
+#gridservicios{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    .gridnosotros:not(:last-child){
+        border-right: 1px solid black;
+        margin-left:10px;
+        margin-right: 10px;
+    }
+}
+
+footer {
+  background-color: #ffffff78;
+  font-size: 20px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+    img{
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    img:hover{
+            transform: rotate(30deg);
+            }
+}
