@@ -1,0 +1,65 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../imgs/background.jpg);
+  background-size: cover;
+  font-family: "playfair display";
+  font-size: 18px;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+body header .logo img {
+  width: 160px;
+  border-radius: 20px;
+}
+body header .navbar .nav-item {
+  display: inline-block;
+  justify-content: space-between;
+  margin-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body header .navbar .nav-item:not(:last-child) {
+  border-right: 1px solid #8f005f;
+}
+body header .navbar a:hover {
+  background-color: hsla(300, 90%, 41%, 0.329);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  text-decoration: none;
+}
+body .imagenes-uñas img {
+  width: 160px;
+  border-radius: 20px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+body .imagenes-uñas img:hover {
+  width: 300px;
+}
+body main {
+  margin-top: 10px;
+  background-color: rgba(250, 235, 215, 0.67);
+}
+body .cursos img {
+  width: 350px;
+}
+body .cursos img:hover {
+  width: 450px;
+}
+
+footer #gridcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+/*# sourceMappingURL=style.css.map */
