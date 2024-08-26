@@ -1,0 +1,109 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../imgs/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "playfair display";
+  font-size: 18px;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+header .logo img {
+  width: 160px;
+  border-radius: 20px;
+}
+header .navbar {
+  background-color: rgba(255, 255, 255, 0.4705882353);
+}
+header .navbar .nav-item {
+  display: inline-block;
+  justify-content: space-between;
+  margin-left: 60px;
+  padding-right: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+header .navbar .nav-item:not(:last-child) {
+  border-right: 1px solid rgba(231, 0, 134, 0.9529411765);
+}
+header .navbar a {
+  text-decoration: none;
+  color: rgba(231, 0, 134, 0.9529411765);
+}
+header .navbar a:hover {
+  background-color: hsla(300, 90%, 41%, 0.329);
+  color: hwb(0 100% 0%/0.999);
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.imagenes-uñas img {
+  width: 160px;
+  border-radius: 20px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.imagenes-uñas img:hover {
+  width: 300px;
+  transition: all 4s;
+}
+
+main {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.4705882353);
+}
+
+.cursos img {
+  width: 350px;
+}
+.cursos img:hover {
+  width: 450px;
+  transition: all 2s;
+}
+
+#carouselExampleFade {
+  width: 400px;
+}
+
+#gridservicios {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+#gridservicios .gridnosotros:not(:last-child) {
+  border-right: 1px solid black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.4705882353);
+  font-size: 20px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+footer img {
+  height: 40px;
+  border-radius: 20px;
+}
+footer img:hover {
+  transform: rotate(30deg);
+}
+
+/*# sourceMappingURL=style.css.map */
